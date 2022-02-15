@@ -8,28 +8,30 @@ var transform = prefix('transform')
 var translate = Deck.translate
 
 var $container = document.getElementById('container')
-var $topbar = document.getElementById('topbar')
+var $shuffle = document.getElementById('shuffle')
+var $flip = document.getElementById('flip')
+//var $topbar = document.getElementById('topbar')
 
-var $sort = document.createElement('button')
-var $shuffle = document.createElement('button')
-var $bysuit = document.createElement('button')
-var $fan = document.createElement('button')
+//var $sort = document.createElement('button')
+//var $shuffle = document.createElement('button')
+//var $bysuit = document.createElement('button')
+//var $fan = document.createElement('button')
 //var $poker = document.createElement('button')
-var $flip = document.createElement('button')
+//var $flip = document.createElement('button')
 
-$shuffle.textContent = 'Shuffle'
-$sort.textContent = 'Sort'
-$bysuit.textContent = 'By suit'
-$fan.textContent = 'Fan'
+//$shuffle.textContent = 'Shuffle'
+//$sort.textContent = 'Sort'
+//$bysuit.textContent = 'By suit'
+//$fan.textContent = 'Fan'
 //$poker.textContent = 'Poker'
-$flip.textContent = 'Flip'
+//$flip.textContent = 'Flip'
 
-$topbar.appendChild($flip)
-$topbar.appendChild($shuffle)
-$topbar.appendChild($bysuit)
-$topbar.appendChild($fan)
+//$topbar.appendChild($flip)
+//$topbar.appendChild($shuffle)
+//$topbar.appendChild($bysuit)
+//$topbar.appendChild($fan)
 //$topbar.appendChild($poker)
-$topbar.appendChild($sort)
+//$topbar.appendChild($sort)
 
 var deck = Deck()
 
@@ -147,20 +149,31 @@ deck.cards.forEach(function (card, i) {
 
 // easter eggs end
 
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'f') {
+    deck.flip()
+  }
+  if (e.key === 's') {
+    deck.sort()
+  }
+  if (e.key === ' ') {
+    deck.shuffle()
+  }
+}); 
+
 $shuffle.addEventListener('click', function () {
   deck.shuffle()
-  deck.shuffle()
 })
-$sort.addEventListener('click', function () {
-  deck.sort()
-})
-$bysuit.addEventListener('click', function () {
-  deck.sort(true) // sort reversed
-  deck.bysuit()
-})
-$fan.addEventListener('click', function () {
-  deck.fan()
-})
+// $sort.addEventListener('click', function () {
+//   deck.sort()
+// })
+// $bysuit.addEventListener('click', function () {
+//   deck.sort(true) // sort reversed
+//   deck.bysuit()
+// })
+// $fan.addEventListener('click', function () {
+//   deck.fan()
+// })
 $flip.addEventListener('click', function () {
   deck.flip()
 })

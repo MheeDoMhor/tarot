@@ -57,6 +57,22 @@ body {
   background-color: #fff;
   color: #444;
 }
+#shuffle {
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+#flip {
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0;
+}
 .message {
   position: fixed;
   top: 2.5rem;
@@ -69,7 +85,7 @@ body {
 .card {
   position: absolute;
   display: inline-block;
-  left: -3rem;
+  left: -40vw;
   top: -5.24rem;
   width: 6rem;
   height: 10.48rem;
@@ -111,6 +127,8 @@ body {
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-color: #fff;
 }
 .card .back {
   position: absolute;

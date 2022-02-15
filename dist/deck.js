@@ -674,7 +674,6 @@ var Deck = (function () {
     var rank = i > 55 ? i - 56 : i % 14 + 1;
     var suit = i > 55 ? 4 : i / 14 | 0;
     var z = i > 55 ? (78 - i) / 5 : (56 - i) / 4;
-    console.log(i, rank, suit, z);
 
     // create elements
     var $el = createElement('div');
