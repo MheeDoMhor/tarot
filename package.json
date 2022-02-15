@@ -1,5 +1,5 @@
 {
-  "name": "deck-of-tarot-cards",
+  "name": "tarot",
   "version": "0.1.9",
   "description": "HTML5 Deck of Tarot Cards",
   "main": "dist/deck.min.js",
@@ -23,7 +23,7 @@
     "of",
     "cards"
   ],
-  "author": "Singhanat Rerng-Osot",
+  "author": "MheeDoMhor",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/singhanat/deck-of-tarot/issues"
