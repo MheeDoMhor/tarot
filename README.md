@@ -11,3 +11,14 @@ fork จาก [singhanat/deck-of-tarot-cards](https://github.com/singhanat/deck
 npm install
 npm start
 ```
+
+## การควบคุมโปรแกรมด้วย keyboard
+
+กด F เพื่อ Flip ไพ่ทุกใบบนจอ  
+กด S เพื่อ Sort  
+กด Spacebar เพื่อ Shuffle  
+
+## การควบคุมโปรแกรมโดยไม่ใช้ keyboard
+
+คลิก มุมบนซ้าย เพื่อ Flip ไพ่ทุกใบบนจอ  
+คลิก มุมบนขวา เพื่อ Shuffle  
